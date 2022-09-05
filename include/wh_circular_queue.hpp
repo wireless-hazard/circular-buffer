@@ -15,7 +15,7 @@ public:
 	return T Returns the value from queue
 	*/
 	T deQueue(void) {
-		if (isEmpty()) {return 0;}
+		if (isEmpty()) {return T{};}
 
 		T element = internal_buffer[++front];
 		
